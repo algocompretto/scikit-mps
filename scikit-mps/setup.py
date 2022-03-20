@@ -24,10 +24,10 @@ setup(
     name = 'scikit-mps',
     version = '0.1.0',
     description = 'Multiple point statistical (MPS) simulation',
-    author = 'Thomas Mejer Hansen',
-    author_email = 'thomas.mejer.hansen@gmail.com',
-    url = 'https://github.com/ergosimulation/mpslib/scikit-mps', # use the URL to the github repo
-    download_url = 'https://github.com/cultpenguin/scikit-mps/master.zip', # I'll explain this in a second
+    author = 'Thomas Mejer Hansen and Gustavo Pretto Scholze',
+    author_email = 'thomas.mejer.hansen@gmail.com & scholzegustavo@gmail.com',
+    url = 'https://github.com/algocompretto/scikit-mps', # use the URL to the github repo
+    download_url = 'https://github.com/algocompretto/scikit-mps/master.zip', # I'll explain this in a second
     keywords = ['geostatistics', 'simulation', 'MPS'], # arbitrary keywords
     classifiers = [
         'Development Status :: 3 - Alpha',

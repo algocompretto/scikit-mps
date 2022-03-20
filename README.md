@@ -3,7 +3,7 @@
   <p align="center">
   <a href="#objective">Objective</a> •
   <a href="#technologies">Technologies</a> •
-  <a href="#usage">Usage</a> •
+  <a href="#usage">Usage</a>
   </p>
 
   <h2 id="objective" > 🎯 Objectives </h2>
