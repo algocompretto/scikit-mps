@@ -1,0 +1,8 @@
+title: MPS
+description: A C++ class for Mutiple Point Simulation algorithms
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-tactile
+
+gems:
+  - jekyll-mentions
