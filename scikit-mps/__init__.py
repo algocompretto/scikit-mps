@@ -1,11 +1,11 @@
 """
-This is the mpslib for python description
-
+This is the Python description file for mpslib
 """
 
 __name__ = 'mpslib'
 __license__ ="""
      (c) 2015-2017 I-GIS (www.i-gis.dk) and Thomas Mejer Hansen (thomas.mejer.hansen@gmail.com)
+        Updated by Gustavo Pretto Scholze
 
         This file is part of MPSlib.
 
@@ -24,9 +24,8 @@ __license__ ="""
         along with MPSlib (COPYING.LESSER).  If not, see <http://www.gnu.org/licenses/>.
     """
 __version__ = 0.01
-#__author__ = ''
+__author__ = 'Gustavo Pretto Scholze'
 
 
-#imports
 from . import mpslib
 
