@@ -1,11 +1,16 @@
-# MPSlib: a C++ class for Multiple-Point based sequential Simulation
-MPSlib provides a set of algorithms for simulation of models based on a multiple point
-statistical model inferred from a training image.
+﻿<h1 align="center">Scikit-MPS: a Python library for Multiple-Point based sequential simulation</h1>
 
-The goal of developing these codes has been to produce a set of algorithms, based
-on sequential simulation, for simulation of multiple point statistical models.
-The code should be easy to compile and extend, and should be allowed for both
-commercial and non-commercial use.
+  <p align="center">
+  <a href="#objective">Objective</a> •
+  <a href="#technologies">Technologies</a> •
+  <a href="#usage">Usage</a> •
+  </p>
+
+  <h2 id="objective" > 🎯 Objectives </h2>
+
+  MPSlib provides a set of algorithms for simulation of models based on a multiple point statistical model inferred from a training image.
+
+The goal of developing these codes has been to produce a set of algorithms, based on sequential simulation, for simulation of multiple point statistical models. The code should be easy to compile and extend, and should be allowed for both commercial and non-commercial use.
 
 > MPSlib (version 1.0) has been developed by
 [I-GIS](http://www.i-gis.dk/)
@@ -15,82 +20,27 @@ and
 >MPSlib (version 1.4) updated by
 Thomas Mejer Hansen (tmeha@geo.au.dk)
 
+>Scikit-MPS currently being updated by
+Gustavo Pretto Scholze
+
 Development has been funded by the Danish National Hightech Foundation (now: the Innovation fund) through the ERGO (Effective high-resolution Geological Modeling) project, a collaboration between
 [IGIS](http://i-gis.dk/),
 [GEUS](http://geus.dk/), and
 [Niels Bohr Institute](http://nbi.ku.dk/).
 
-## Try in Google Colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ergosimulation/mpslib/blob/master/scikit-mps/examples/mpslib_in_google_colab.ipynb)
-Try out MPSlib using the Python interface (scikit-mps) through Google Colab.
-<br><br>
-## Download
-The latest releases, containing statically compiled binaries for Windows and Linux, can be found here:
-[https://github.com/ergosimulation/mpslib/releases/latest](https://github.com/ergosimulation/mpslib/releases/latest).
-
-The source code can be downloaded from Github
-[https://github.com/ergosimulation/mpslib](https://github.com/ergosimulation/mpslib)
-and compiled using
-```bash
-git clone https://github.com/ergosimulation/mpslib.git MPSlib
-cd MPSlib
-make
-```
 ## Documentation
 Documentation is available through [https://mpslib.readthedocs.io/en/latest/](https://mpslib.readthedocs.io/en/latest/).
 
-## Compilation
-The MPSlib codes are written in standard [C++11](https://www.wikiwand.com/en/C%2B%2B11).
 
-MPSlib has been developed using the GNU C++ compiler (tested on Windows, Linux and OSX), and Visual Studio C++.
+  <h2 id="technologies"> 🛠 Technologies </h2>
 
-## Linux or macOS, with C++11
-In general, MPSLIB can be compiled using GCC ( > 4.8.1 ),  using
-```bash
-make
-```
+  The tools used in the construction of the project were:
 
-## Windows: (MINGW-W64)
-Compiler flags:
-```bash
-CPPFLAGS = -static -O3
-```
-MPSlib has been tested using MINGW in Windows. Note that not all builds of MINGW will work. Therefore, we specifically make use of MINGW-w64 ([http://MINGW-w64.org/doku.php]), which can be obtained in a number of ways.
+  - [Python](https://www.python.org/)
 
-One (recommended) approach is to make use of MSYS2. Follow the guide at [http://msys2.github.io/] to install MSYS2, and then install the MINGW_w64 toolchain using:
-```bash
-pacman -S MINGW-w64-x86_64-gcc
-pacman -S make
-```
+  <h2 id="usage" > 👷 Usage </h2>
 
-## Release history
-
-### v1.4 [01-01-2021]
-Support for sequential estimation
-
-### v1.0 [15-02-2016]
-Initial release of MPSlib, with
-`mps_snesim_list`,
-`mps_snesim_tree`, and
-`mps_genesim`.
-
-
-## Running MPS algorithms
-The MPS algorithms are run from the command line prompt using a parameter filename as an argument -
-if there is no argument file, the default parameter file is assumed to the be name of the simulation algorithm appended with `.txt`.
-
-Therefore
-```
-mps_genesim
-```
-and
-
-```
-mps_genesim mps_genesim.txt
-```
-have the same meaning.
-
-
-## SNESIM: `mps_snesim_tree` and `mps_snesim_list`
+  ## SNESIM: `mps_snesim_tree` and `mps_snesim_list`
 The `mps_snesim_tree` and `mps_snesim_list` differ only in the way conditional data is stored in memory - using either a tree or a list structure.
 
 Both algorithms share the same format for the required parameter file:
@@ -224,4 +174,3 @@ Currently not used.
 - `0`: + Information about the simulations is written to the console
 - `1`: + Simulated realization(s) are shown in terminal
 - `2`: + Extra information is written to disk (Random path, ...)
-- `3`: + Debug information written to screen (in general not useful for an end-user)
