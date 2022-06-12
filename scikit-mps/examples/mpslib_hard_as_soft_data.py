@@ -119,7 +119,7 @@ if __name__ == '__main__':
         OUT.append(EM)
         
         
-    mps.plot.marg1D(O_test,1)    
+    mps.plot.margin_1d(O_test, 1)
     #%% plot some data
     fig = plt.figure(figsize=(15, 15))
     plt.clf

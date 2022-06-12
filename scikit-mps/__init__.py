@@ -1,7 +1,3 @@
-"""
-This is the Python description file for mpslib
-"""
-
 __name__ = 'mpslib'
 __license__ ="""
      (c) 2015-2017 I-GIS (www.i-gis.dk) and Thomas Mejer Hansen (thomas.mejer.hansen@gmail.com)
