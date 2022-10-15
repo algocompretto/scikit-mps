@@ -30,11 +30,10 @@ class exclass:
         return Oall
         
     def run_parallel(self, N=10):
-        '''RUN simulation in parallel
-        '''
+        '''RUN simulation in parallel'''
         from multiprocessing import Pool
         
-        Oall=[];
+        Oall=[]
         for i in range(N):
             Otest = copy.deepcopy(self)
             Otest.x=i
